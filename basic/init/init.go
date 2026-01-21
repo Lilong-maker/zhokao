@@ -2,9 +2,9 @@ package init
 
 import (
 	"fmt"
-	"zhokao/basic/config"
-	"zhokao/handler/model"
 
+	"github.com/Lilong-maker/zhokao/basic/config"
+	"github.com/Lilong-maker/zhokao/handler/model"
 	"github.com/spf13/viper"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"

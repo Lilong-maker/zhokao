@@ -1,4 +1,13 @@
 package service
+
+import (
+	"context"
+
+	"github.com/Lilong-maker/zhokao/basic/config"
+	__ "github.com/Lilong-maker/zhokao/basic/proto"
+	"github.com/Lilong-maker/zhokao/handler/model"
+)
+
 <<<<<<< HEAD
 =======
 
@@ -7,7 +16,7 @@ import (
 	"zhokao/basic/config"
 	"zhokao/handler/model"
 
-	__ "zhokao/basic/proto"
+
 )
 
 // server is used to implement helloworld.GreeterServer.
