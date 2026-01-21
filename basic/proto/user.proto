@@ -1,0 +1,52 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "./";
+
+message GoodAddReq {
+  string name = 1;
+  fixed32 price = 2;
+  int32 num = 3;
+}
+
+message GoodAddResp {
+  int32 code= 1;
+  string msg= 2;
+}
+message GoodUpdateReq {
+  int32 id = 4;
+  string name = 1;
+  fixed32 price = 2;
+  int32 num = 3;
+}
+
+message GoodUpdateResp {
+  int32 code= 1;
+  string msg= 2;
+}
+message GoodListReq {
+  int32  id =1;
+}
+
+message GoodListResp {
+  int32 code= 1;
+  string msg= 2;
+  string name = 4;
+  fixed32 price = 5;
+  int32 num = 3;
+}
+message GoodDeleteReq {
+  int32  id =1;
+}
+
+message GoodDeleteResp {
+  int32 code= 1;
+  string msg= 2;
+}
+service StreamGreeter {
+  rpc GoodAdd(GoodAddReq) returns (GoodAddResp);
+  rpc GoodUpdate(GoodUpdateReq) returns (GoodUpdateResp);
+  rpc GoodList(GoodListReq) returns (GoodListResp);
+  rpc GoodDelete(GoodDeleteReq) returns (GoodDeleteResp);
+}
