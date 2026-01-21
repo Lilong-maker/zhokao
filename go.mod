@@ -1,4 +1,4 @@
-module zhokao
+module github.com/Lilong-maker/zhokao
 
 go 1.25.5
 
